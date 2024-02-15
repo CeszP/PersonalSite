@@ -2,7 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #0F0F0F;
+    background-color: #111827;
     color: #FFF;
     margin: 0 4em;
     display: flex;
@@ -13,12 +13,25 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 2em 0;
 }
 main{
-    background-color: #494949;
+    /* background-color: #1F2937; */
     border: 1px transparent solid;
     border-radius: 2em;
     
+}
+h1{
+    color:#FFE84D;
+    font-size: 2em;
+    margin-bottom: .75em;
+}
+h2{
+    color:#FFE84D;
+    margin-bottom: .75em;
+}
+section{
+    margin: 1em 0;
 }
 input[type="submit"]{
     background-color: #FFE84D;
@@ -31,29 +44,35 @@ input[type="text"]{
     all: unset;
     border-bottom: #FFF solid 1px;
     color: #CCC;
-    padding: .3em;    
+    padding: .3em; 
+    width: 25em;   
 }
 /* --------------------- */
-#info{
-    margin: 2em 0;
-}
 #SH{
     color: #FFE84D;
 }
 .main-container{
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    padding: 5em;
+    padding: 2em;
 }
 /* ------------------------- */
 #quien-soy{
+    background-color: #1F2937;
+    border: transparent solid 1px;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    padding: 2em;
+}
+#quien-soy-content{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
 }
 #personal-img{
     text-align: center;
@@ -61,29 +80,33 @@ input[type="text"]{
 #personal-img>img{
     border: 1px solid  transparent;
     border-radius: 2em;
-    width: 15em;
+    width: 22em;
 }
 .paragraphs{
-    border: 2px #FFF solid;
-    font-size: 1.2em;
+    border-left: 1px #FFF solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25em;
+    height: 16em;
     margin: 1em 0;
-    padding: 1em;
-    border-radius: 1em;
-    width: 80%;
+    padding: 2em;
+    width: 70%;
 }
 p{
     margin: 1em 0;
-    text-align: center;
+    text-align: justify;
 }
 /* ------------------------- */
 #techstack{
-    border: 1px solid  #FFF;
-    border-radius: 2em;
+    background-color: #1F2937;
+    border: transparent solid 1px;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2EM;
+    padding: 2em;
 }
 .tarjetas{
     display: flex;
@@ -98,11 +121,15 @@ p{
 }
 /* ------------------------- */
 #actividades-fav{
+    background-color: #1F2937;
+    border: transparent solid 1px;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 2em;
+    padding: 2em;
 }
 #actividades-fav>form{
     margin-top: 1em;

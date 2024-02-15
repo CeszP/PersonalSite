@@ -15,32 +15,33 @@
     <header>
         <div id="info">
             <h1>César Peñaloza Pineda</h1>
-            <br>
             <h3>Mi primer proyecto <span id="SH">SoyHenry</span></h3>
         </div>
     </header>
     <main>
         <div class="main-container">
             <section id="quien-soy">
-                <div id="personal-img">
-                    <img src="assets/ME.jpeg" alt="">
-                </div>
-                <div class="paragraphs">
-                    <p>
-                        Soy ingeniero en Sistemas Computacionales egresado del 
-                        Instituto Tecnológico de La Piedad. Con experiencia en 
-                        lenguajes y herramientas como Java, Spring Boot, PHP, 
-                        Javascript, SQL, SQLite, HTML, CSS, Bootstrap, Hibernate.
-                    </p>
-                    <p>    
-                        Adicional a lo anterior, cuento con experiencia en el sector
-                        TI, trabajando para compañías a nivel nacional y extranjero
-                        tales como KPMG, TELMEX, SINGLEPOINT y TCS.
-                    </p>
-                </div>
+                <div id="quien-soy-content">
+                    <div id="personal-img">
+                        <img src="assets/ME.jpeg" alt="">
+                    </div>
+                    <div class="paragraphs">
+                        <h2>¿Quién soy?</h2>
+                        <p>
+                            Soy Ingeniero en Sistemas Computacionales egresado del Instituto Nacional de La Piedad con 
+                            experiencia en desarrollo Java utilizando frameworks como Spring y Springbooty en desarrollo 
+                            web usando HTML, CSS, PHP y JS.
+                        </p>
+                        <p>    
+                            Adicional a lo anterior, He participado en procesos de mentoring y he diseñando y ejecutando un 
+                            plan académico para personas de 16 a 18 años enseñándoles las bases de desarrollo web (HTML, 
+                            CSS, PHP, JS) y desarrollo móvil (Swift).
+                        </p>
+                    </div>
+                </div>                
             </section>
             <section id="techstack">
-                <h2>Tecnologías Favoritas</h2>
+                <h1>Tecnologías Favoritas</h1>
                 <div class="tarjetas">                    
                     <div class="card">
                         <img src="assets/HTML.png" alt="">
@@ -57,11 +58,11 @@
                 </div>
             </section>
             <section id="actividades-fav">
-                <h2>Actividades favoritas</h2>
+                <h1>Actividades favoritas</h1>
                 <form action="">
-                    <input type="text" value="Nombre de la actividad">
-                    <input type="text" value="Descripción de la actividad">
-                    <input type="text" value="Link de la imagen">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="descripcion" placeholder="Descripción">
+                    <input type="text" name="url" placeholder="URL de imagen">
                     <input type="submit" value="Agregar">
                 </form>
             </section>
