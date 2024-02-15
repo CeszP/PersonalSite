@@ -1,0 +1,113 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #0F0F0F;
+    color: #FFF;
+    margin: 0 4em;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main{
+    background-color: #494949;
+    border: 1px transparent solid;
+    border-radius: 2em;
+    
+}
+input[type="submit"]{
+    background-color: #FFE84D;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    padding: .5em;
+}
+input[type="text"]{
+    all: unset;
+    border-bottom: #FFF solid 1px;
+    color: #CCC;
+    padding: .3em;    
+}
+/* --------------------- */
+#info{
+    margin: 2em 0;
+}
+#SH{
+    color: #FFE84D;
+}
+.main-container{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 5em;
+}
+/* ------------------------- */
+#quien-soy{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#personal-img{
+    text-align: center;
+}
+#personal-img>img{
+    border: 1px solid  transparent;
+    border-radius: 2em;
+    width: 15em;
+}
+.paragraphs{
+    border: 2px #FFF solid;
+    font-size: 1.2em;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 1em;
+    width: 80%;
+}
+p{
+    margin: 1em 0;
+    text-align: center;
+}
+/* ------------------------- */
+#techstack{
+    border: 1px solid  #FFF;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2EM;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+    gap: 10em;
+}
+.card{
+    text-align: center;
+}
+/* ------------------------- */
+#actividades-fav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+}
+#actividades-fav>form{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
