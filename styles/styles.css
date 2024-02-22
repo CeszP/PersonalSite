@@ -1,6 +1,15 @@
 *{
     font-family: 'PT Sans', sans-serif;
 }
+.box-shadow{
+    box-shadow: 
+        0 1px 1px hsl(0deg 0% 0% / 0.05),
+        0 2px 2px hsl(0deg 0% 0% / 0.05),
+        0 4px 4px hsl(0deg 0% 0% / 0.05),
+        0 8px 8px hsl(0deg 0% 0% / 0.05),
+        0 16px 16px hsl(0deg 0% 0% / 0.05)
+    ;
+}
 body{
     background-color: #F6F7FB;
     color: #333;
@@ -34,31 +43,9 @@ h1{
     border: .05em solid #BCBCBC;
     color:#F0BE25;
     font-size: 2em;
-    box-shadow: 
-        0 1px 1px hsl(0deg 0% 0% / 0.05),
-        0 2px 2px hsl(0deg 0% 0% / 0.05),
-        0 4px 4px hsl(0deg 0% 0% / 0.05),
-        0 8px 8px hsl(0deg 0% 0% / 0.05),
-        0 16px 16px hsl(0deg 0% 0% / 0.05)
-    ;
     border-radius: .1em;
     margin: 0;
     padding: .25em;
-}
-#subtitle{
-    background-color: #333;
-    border: .05em solid #BCBCBC;
-    color:#FFF;
-    padding: .25em;
-    box-shadow: 
-        0 1px 1px hsl(0deg 0% 0% / 0.05),
-        0 2px 2px hsl(0deg 0% 0% / 0.05),
-        0 4px 4px hsl(0deg 0% 0% / 0.05),
-        0 8px 8px hsl(0deg 0% 0% / 0.05),
-        0 16px 16px hsl(0deg 0% 0% / 0.05)
-    ;
-    border-radius: .1em;
-    font-size: 1em;
 }
 h2{
     color:#F0BE25;
@@ -81,12 +68,11 @@ section{
     align-items: center;
     padding: 2em;
 }
-button[type="submit"]{
+button{
     background-color: #F0BE25;
     border: none;
     color: #333;
     cursor: pointer;
-    font-weight: bold;
     padding: .5em;
 }
 input[type="text"]{
@@ -101,6 +87,12 @@ input[type="text"]{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+footer{
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+
 }
 /* --------------------- */
 #info{
@@ -122,7 +114,7 @@ input[type="text"]{
     padding: 2em;
 }
 /* ------------------------- */
-#quien-soy-content{
+#who-am-i-content{
     display: flex;
     justify-content: space-evenly;
 }
@@ -153,7 +145,7 @@ p{
     text-align: justify;
 }
 /* ------------------------- */
-.tarjetas{
+.cards{
     
     display: flex;
     flex-direction: row;
@@ -177,13 +169,57 @@ p{
     text-align: center;
 }
 /* ------------------------- */
-#actividades-fav>form{
+#activities > form{
     margin-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
 }
-#actividades-fav>form> input:focus{
+#activities>form> input:focus{
     color: #888;
+}
+#activities-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+}
+.activity-card{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+    box-shadow: 
+        0 1px 2px rgba(0,0,0,0.07), 
+        0 2px 4px rgba(0,0,0,0.07), 
+        0 4px 8px rgba(0,0,0,0.07), 
+        0 8px 16px rgba(0,0,0,0.07),
+        0 16px 32px rgba(0,0,0,0.07), 
+        0 32px 64px rgba(0,0,0,0.07);
+    ;
+    display: flex;
+    flex-direction: column;
+    height: 16em;
+    margin: 1em 2em;
+    padding: 1em;
+    width: 12em;
+}
+.card-title{
+    all: unset;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.card-desc{
+    color: #666;
+    font-style: italic;
+}
+.delete-button{
+    align-self: end;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('../assets/close.png');
+    background-size: cover;
+    height: 25px;
+    width: 25px;
 }

@@ -13,10 +13,10 @@
 <body>
     <header>
         <div id="info">
-            <span class="SH" style="color: #FFF;">Hey, I'm</span>
+            <span class="SH" style="color: #FFF;">Hey! I'm</span>
             <div class="enclose">
                 <hr>
-                <h1 id="title">CÉSAR PEÑALOZA PINEDA</h1>
+                <h1 id="title" class="box-shadow">CÉSAR PEÑALOZA PINEDA</h1>
                 <hr>
             </div>
         </div>
@@ -25,8 +25,8 @@
         <div class="main-container">
             <h1>Welcome to my site.</h1> 
             <span style="width: fit-content; margin: -2em auto 4em auto;" class="SH">Feel free <span style="color:#FFF">(not so much)</span> to make any recommendations about it.</span>
-            <section id="quien-soy">
-                <div id="quien-soy-content">
+            <section id="who-am-i">
+                <div id="who-am-i-content">
                     <div id="personal-img">
                         <img src="assets/ME.jpeg" alt="">
                     </div>
@@ -48,29 +48,37 @@
             </section>
             <section id="techstack">
                 <h2>What's my favorite tech stack ?</h2>
-                <div class="tarjetas">                    
-                    <div class="card">
+                <div class="cards">                    
+                    <div class="card box-shadow">
                         <img src="assets/HTML.png" alt="">
                     </div>
-                    <div class="card">
+                    <div class="card box-shadow">
                         <img src="assets/CSS.png" alt="">
                     </div>
-                    <div class="card">
+                    <div class="card box-shadow">
                         <img src="assets/JS.png" alt="">
                     </div>
                 </div>
             </section>
             <h1><span class="SH">¡It's your turn!</span> Give me something to do <span class="SH">so I won't get bored</span>...</h1>
-            <section id="actividades-fav">
+            <section id="activities">
                 <h2>Activities</h2>
                 <form action="">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="description" placeholder="Description">
-                    <input type="text" name="url" placeholder="Image URL">
-                    <button type="submit">Add</button>
+                    <input id="name-input" type="text" name="name" placeholder="Name">
+                    <input id="description-input" type="text" name="description" placeholder="Description">
+                    <input id="imgUrl-input" type="text" name="url" placeholder="Image URL">
+                    <button type="button" onclick="addActivity()">Add</button>
                 </form>
+                <div id="activities-container"></div>
             </section>
         </div>
     </main>
+    <footer>
+        <h3>Built by <span class="SH"> Cesar Penaloza Pineda</span></h3>
+    </footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
+
+
+<!-- Play videogames such as Zelda, Mario Oddissey, FC, Call of Duty. -->
